@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MinuteDrop — shop local essentials, food and everyday products with one-day local delivery.">
+  <title>MinuteDrop | Your local needs, delivered today</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-icon">M</span><span>minute<strong>drop</strong></span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+  <nav id="nav">
+    <a href="#categories">Categories</a><a href="#products">Shop</a><a href="#how">How it works</a>
+  </nav>
+  <div class="header-actions">
+    <button class="location-btn" id="locationBtn"><span>⌖</span><span><small>Delivering to</small><b id="locationLabel">Select location</b></span></button>
+    <button class="icon-btn" id="accountBtn" aria-label="Account">♙</button>
+    <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="kicker">YOUR NEIGHBOURHOOD, ONE CLICK AWAY</span>
+      <h1>Your local needs.<br><em>Delivered in minutes.</em></h1>
+      <p>Groceries, fresh vegetables, bakery treats, tiffins and everyday essentials from local stores and MinuteDrop.</p>
+      <div class="hero-buttons"><a class="btn primary" href="#products">Start shopping <span>→</span></a><a class="plain-link" href="#how">How it works</a></div>
+      <div class="hero-points"><span>✓ Local stores</span><span>✓ Convenient ordering</span><span>✓ Delivery updates</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-circle"></div><div class="hero-sticker">LOCAL<br>LOVE</div>
+      <div class="hero-bag"><div class="bag-handle"></div><span>MD</span><small>FRESH FINDS</small></div>
+      <div class="floating-product p1">🥑</div><div class="floating-product p2">🥖</div><div class="floating-product p3">🥬</div>
+      <div class="delivery-note"><span class="live-dot"></span><div><b>Local delivery</b><small>From nearby sellers</small></div></div>
+    </div>
+  </section>
+
+  <section class="service-strip">
+    <div><b>One platform</b><span>Everyday shopping</span></div><div><b>Local partners</b><span>Support nearby stores</span></div><div><b>Clear updates</b><span>Know your order status</span></div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="section-title"><div><span class="kicker">BROWSE YOUR FAVOURITES</span><h2>Shop by category</h2><p>Good things from around your neighbourhood.</p></div><a href="#products" class="plain-link">Explore all products →</a></div>
+    <div class="category-grid" id="categoryGrid">
+      <button class="category-card active" data-category="All"><span class="cat-emoji">🛍️</span><b>All</b><small>Explore everything</small></button>
+      <button class="category-card" data-category="Groceries"><span class="cat-emoji">🛒</span><b>Groceries</b><small>Daily essentials</small></button>
+      <button class="category-card" data-category="Vegetables"><span class="cat-emoji">🥦</span><b>Vegetables</b><small>Fresh picks</small></button>
+      <button class="category-card" data-category="Seasonal Wear"><span class="cat-emoji">👕</span><b>Seasonal Wear</b><small>Dress for the day</small></button>
+      <button class="category-card" data-category="Bakery"><span class="cat-emoji">🥐</span><b>Bakery</b><small>Baked with care</small></button>
+      <button class="category-card" data-category="Medical Equipment"><span class="cat-emoji">🩺</span><b>Medical Equipment</b><small>Everyday devices</small></button>
+      <button class="category-card" data-category="Tiffins & Food"><span class="cat-emoji">🍱</span><b>Tiffins & Food</b><small>Meals and snacks</small></button>
+    </div>
+  </section>
+
+  <section class="section product-section" id="products">
+    <div class="section-title"><div><span class="kicker">HANDPICKED FOR YOUR AREA</span><h2>Popular near you</h2><p>Demo products to show how MinuteDrop shopping will work.</p></div></div>
+    <div class="shop-toolbar">
+      <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products, e.g. tomatoes"></label>
+      <select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option></select>
+      <select id="sellerSelect" aria-label="Filter by seller"><option value="all">All sellers</option><option value="minute">MinuteDrop Store</option><option value="partner">Local Partner Stores</option></select>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>No products match your search. Try another keyword or category.</p>
+  </section>
+
+  <section class="split-banner section" id="how">
+    <div><span class="kicker">A BETTER WAY TO SHOP LOCAL</span><h2>From nearby shelves<br>to your doorstep.</h2><p>Discover products from MinuteDrop and trusted neighbourhood sellers in one convenient place.</p><a href="#products" class="btn light">Explore products →</a></div>
+    <div class="steps">
+      <article><span>01</span><div><b>Choose your location</b><small>See products available in your area.</small></div></article>
+      <article><span>02</span><div><b>Shop across categories</b><small>Choose from MinuteDrop and local partners.</small></div></article>
+      <article><span>03</span><div><b>Place your order</b><small>Review your cart and delivery details.</small></div></article>
+      <article><span>04</span><div><b>Get delivery updates</b><small>Follow your order status in the platform.</small></div></article>
+    </div>
+  </section>
+
+  <section class="seller-cta">
+    <div><span class="kicker">ARE YOU A LOCAL BUSINESS?</span><h2>Bring your store to more doorsteps.</h2><p>MinuteDrop is designed to connect neighbourhood businesses with local customers.</p></div>
+    <a class="btn primary" href="mailto:admin@minutedrop.in?subject=MinuteDrop%20Vendor%20Enquiry">Become a partner →</a>
+  </section>
+</main>
+
+<footer><a class="brand" href="#"><span class="brand-icon">M</span><span>minute<strong>drop</strong></span></a><p>Your local needs, delivered in minutes.</p><small>© <span id="year"></span> MinuteDrop. Frontend demo.</small></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><div><span class="kicker">YOUR BASKET</span><h2>Your cart</h2></div><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div>
+  <div id="cartItems" class="cart-items"><p class="muted">Your cart is waiting for something good.</p></div>
+  <div class="cart-summary"><div><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><small>Delivery fee and final availability will be confirmed at checkout.</small><button class="btn primary full" id="checkoutBtn">Continue to checkout</button></div>
+</aside>
+
+<dialog id="locationDialog" class="modal">
+  <form method="dialog"><button class="close-btn modal-close" aria-label="Close">×</button><span class="kicker">DELIVERY LOCATION</span><h2>Where should we deliver?</h2><p class="muted">Enter your area to personalise the demo shopping experience.</p><label class="field-label">Your area or locality<input id="areaInput" placeholder="e.g. Kukatpally, Hyderabad" required></label><button class="btn primary full" id="saveLocation" value="default">Save location</button></form>
+</dialog>
+
+<dialog id="checkoutDialog" class="modal">
+  <form id="checkoutForm"><button type="button" class="close-btn modal-close" id="closeCheckout" aria-label="Close">×</button><span class="kicker">DEMO CHECKOUT</span><h2>Delivery details</h2><p class="muted">This is a frontend preview. No real order or payment will be placed.</p>
+    <label class="field-label">Full name<input required placeholder="Your name"></label>
+    <label class="field-label">Phone number<input required type="tel" pattern="[0-9+() -]{8,}" placeholder="Your contact number"></label>
+    <label class="field-label">Delivery address<textarea required rows="3" placeholder="House number, street, area"></textarea></label>
+    <label class="field-label">Preferred delivery date<select><option>Today (subject to availability)</option><option>Tomorrow</option></select></label>
+    <button class="btn primary full" type="submit">Preview order summary</button>
+  </form>
+</dialog>
+
+<dialog id="accountDialog" class="modal">
+  <form method="dialog"><button class="close-btn modal-close" aria-label="Close">×</button><span class="kicker">CUSTOMER ACCOUNT</span><h2>Welcome to MinuteDrop</h2><p class="muted">Customer sign-in and registration will be connected to the backend in a later phase.</p><button class="btn primary full" value="close">Got it</button></form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
